@@ -1,4 +1,5 @@
 import LayoutMaintenance from "./LayoutMaintenance";
+import Navbar from "@/components/common/Navbar";
 
 type LayoutRootProps = {
   children: React.ReactNode;
@@ -8,12 +9,15 @@ type LayoutRootProps = {
 
 export default function LayoutRoot({
   children,
-  title,
   mode = 'default',
 }: LayoutRootProps) {
   return (
     <main className={`font-sans `}>
-     {mode === 'maintenance' ? <LayoutMaintenance /> : children}
+     <Navbar />
+
+     <section className="2xl:container mx-auto">
+        {mode === 'maintenance' ? <LayoutMaintenance /> : children}
+     </section>
     </main>
   );
 }
