@@ -1,11 +1,7 @@
 "use client";
 
-import FormLogin from "@/components/views/auth/formLogin";
+import FormLogin from "@/components/views/auth/components/formLogin";
 
 export default function Login() {
-  return (
-    <div className="bg-green-500">
-      <FormLogin />
-    </div>
-  );
+  return <FormLogin />;
 }

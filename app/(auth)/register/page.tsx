@@ -1,6 +1,6 @@
 "use client";
 
-import FormRegister from "@/components/views/auth/formRegister";
+import FormRegister from "@/components/views/auth/components/formRegister";
 
 export default function Register() {
   return (
