@@ -13,7 +13,7 @@ export const useLogin = () => {
             console.log('redirect', redirect);
             console.log('url', url);
             console.log('success');
-            router.push('/');
+            router.push('/dashboard');
         },
         onError: (error) => {
             console.log('error', error);

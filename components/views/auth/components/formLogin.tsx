@@ -38,7 +38,7 @@ export default function FormLogin() {
     });
 
   return (
-    <Card className="w-full shadow-lg border-muted/60">
+    <Card className="w-full max-w-md shadow-lg border-muted/60">
       <CardHeader className="space-y-1 text-center">
         <div className="flex justify-center mb-4">
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
@@ -90,7 +90,7 @@ export default function FormLogin() {
 
       <CardFooter className="flex justify-center">
         <p className="text-sm text-muted-foreground">
-          Don&apos;t have an account?{" "}
+          Don&apos;t have an account?
           <Link
             href="/register"
             className="text-primary font-medium hover:underline"

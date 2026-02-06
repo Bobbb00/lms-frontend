@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import { LoginSchemaType } from "../schemas/loginSchemaform"
 import { authClient } from "@/config/authClient"
 
@@ -13,7 +14,7 @@ export const apiLogin = async (payload: LoginSchemaType) => {
             },
             token: "dummy-token",
             redirect: true,
-            url: "/"
+            url: "/dashboard"
         };
     }
 
